@@ -12,9 +12,13 @@
 		9E8016BE1D837B84004E73DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8016BC1D837B84004E73DC /* Main.storyboard */; };
 		9E8016C01D837B84004E73DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8016BF1D837B84004E73DC /* Assets.xcassets */; };
 		9E8016C31D837B84004E73DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8016C11D837B84004E73DC /* LaunchScreen.storyboard */; };
+		EF7952F624C31DA510C39A94 /* Pods_Matthew_Eng_Triprise_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31158C3059E55A672C8E1C1F /* Pods_Matthew_Eng_Triprise_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31158C3059E55A672C8E1C1F /* Pods_Matthew_Eng_Triprise_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Matthew_Eng_Triprise_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AED8D082EE4A731E5F71820 /* Pods-Matthew-Eng-Triprise-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Eng-Triprise-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Matthew-Eng-Triprise-App/Pods-Matthew-Eng-Triprise-App.release.xcconfig"; sourceTree = "<group>"; };
+		814EBDFC3F4D308C35637B70 /* Pods-Matthew-Eng-Triprise-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Matthew-Eng-Triprise-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Matthew-Eng-Triprise-App/Pods-Matthew-Eng-Triprise-App.debug.xcconfig"; sourceTree = "<group>"; };
 		9E8016B51D837B84004E73DC /* Matthew-Eng-Triprise-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matthew-Eng-Triprise-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8016B81D837B84004E73DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E8016BA1D837B84004E73DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7952F624C31DA510C39A94 /* Pods_Matthew_Eng_Triprise_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28173960CA41795BD666A438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31158C3059E55A672C8E1C1F /* Pods_Matthew_Eng_Triprise_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E8016AC1D837B84004E73DC = {
 			isa = PBXGroup;
 			children = (
 				9E8016B71D837B84004E73DC /* Matthew-Eng-Triprise-App */,
 				9E8016B61D837B84004E73DC /* Products */,
+				EEB2F5BDEEE0839E23C93F80 /* Pods */,
+				28173960CA41795BD666A438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Matthew-Eng-Triprise-App";
 			sourceTree = "<group>";
 		};
+		EEB2F5BDEEE0839E23C93F80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				814EBDFC3F4D308C35637B70 /* Pods-Matthew-Eng-Triprise-App.debug.xcconfig */,
+				5AED8D082EE4A731E5F71820 /* Pods-Matthew-Eng-Triprise-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E8016C71D837B84004E73DC /* Build configuration list for PBXNativeTarget "Matthew-Eng-Triprise-App" */;
 			buildPhases = (
+				8ADE4488AD2B09E9A68F99A0 /* [CP] Check Pods Manifest.lock */,
 				9E8016B11D837B84004E73DC /* Sources */,
 				9E8016B21D837B84004E73DC /* Frameworks */,
 				9E8016B31D837B84004E73DC /* Resources */,
+				700AF6CFA0F177F142FE7D4D /* [CP] Embed Pods Frameworks */,
+				416DC88281780A59470A1664 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		416DC88281780A59470A1664 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Matthew-Eng-Triprise-App/Pods-Matthew-Eng-Triprise-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		700AF6CFA0F177F142FE7D4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Matthew-Eng-Triprise-App/Pods-Matthew-Eng-Triprise-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ADE4488AD2B09E9A68F99A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E8016B11D837B84004E73DC /* Sources */ = {
@@ -248,6 +323,7 @@
 		};
 		9E8016C81D837B84004E73DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814EBDFC3F4D308C35637B70 /* Pods-Matthew-Eng-Triprise-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Matthew-Eng-Triprise-App/Info.plist";
@@ -259,6 +335,7 @@
 		};
 		9E8016C91D837B84004E73DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AED8D082EE4A731E5F71820 /* Pods-Matthew-Eng-Triprise-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Matthew-Eng-Triprise-App/Info.plist";
@@ -287,6 +364,7 @@
 				9E8016C91D837B84004E73DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
